@@ -1,0 +1,44 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+body{
+  display: grid;
+  place-items: center;
+  /* Centers both horizontally and vertically */
+  height: 100vh; /* Full viewport height */
+  margin: 0;
+  text-align: center; /* Aligns text inside the container */
+  background-image: url('imagessss.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.heading{
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  font-family: 'Times New Roman', Times, serif;
+  text-decoration: underline;
+}
+h1 {
+  text-align: center;
+  font-family: monospace;
+  color: aliceblue;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid;
+  width: 15ch;
+  animation: typing 3s steps(15) forwards, blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 15ch; }
+}
+
+@keyframes blink {
+  from, to { border-color: transparent; }
+  50% { border-color: black; }
+}
